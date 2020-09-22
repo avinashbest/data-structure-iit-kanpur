@@ -10,7 +10,7 @@ struct student
     struct student *next;
 };
 
-struct student *start, *node, *temp;
+struct student *start = NULL, *node, *temp;
 
 int main(void)
 {
@@ -36,9 +36,9 @@ void create()
         else
         {
             temp->next = node;
-            temp = temp->next;
+            temp = temp->next; // or temp = node; => So, that node and temp point the same location.
         }
-        printf("\nDo You Want To Continue Y or N: ");
+        printf("Do You Want To Continue Y or N: ");
         fflush(stdin); //Use before scanf() => clear garbage value
         scanf("%c", &choice);
     } while (choice == 'Y' || choice == 'y');
