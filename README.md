@@ -1,5 +1,5 @@
 # Compilation process of a program:
-Commands can be used in powershell or cmd to steby step compilation:
+Commands can be used in powershell or cmd to step by step compilation:
 
 	1. gcc -E program.c -o program.i //Expandable Code
 	2. gcc -S program.i -o program.s //Assembly Code
