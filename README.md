@@ -6,50 +6,6 @@ Commands can be used in powershell or cmd to step by step compilation:
 	3. gcc -E program.s -o program.o //Object Code
 	4. gcc -v program.o -o program.exe //Executable Code
 
-# Compilation & Execution of a program
-
-										  C Source Code
-
-												||
-												\/
-
-										  C Preprocessor
-
-												||
-												\/
-
-										 Expanded C Source
-
-												||
-												\/
-
-											C Compiler
-
-												||
-												\/
-
-										Target Assembly Code
-
-												||
-												\/
-
-											  Linker
-
-												||
-												\/
-
-										  Executable Code
-
-												||
-												\/
-
-											  Loader
-
-												||
-												\/
-
-											  Output
-
 # Functions: // 10 SEPT 2020
 
 Set of statement or block of code that perform some tasks.
