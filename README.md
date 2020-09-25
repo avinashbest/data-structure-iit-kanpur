@@ -6,6 +6,8 @@ Commands can be used in powershell or cmd to step by step compilation:
 	3. gcc -E program.s -o program.o //Object Code
 	4. gcc -v program.o -o program.exe //Executable Code
 
+![image](https://drive.google.com/uc?export=view&id=1d8xK2HFH99DNw31xhIW5vZyvfv0MGxFh)
+
 # Functions: // 10 SEPT 2020
 
 Set of statement or block of code that perform some tasks.
