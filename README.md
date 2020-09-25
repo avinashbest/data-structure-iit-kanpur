@@ -54,7 +54,7 @@ Function Calling:
 # Array:
 	-> An Array is a collection of similar data items and these data items may be all int, float or all char.
 	-> Each member of an array is identified by unique index or subscript assigned to it.
-	-> An Array is defined in the same way as a variable defined except that array name is followed by onr or more, expressions, enclosed withing square brackets[], specifying the array dimension.
+	-> An Array is defined in the same way as a variable defined except that array name is followed by ono or more, expressions, enclosed withing square brackets[], specifying the array dimension.
 	-> The general Syntax of an array is:
 
 SYNTAX: data_type ArrayName[SIZE];
@@ -73,16 +73,16 @@ Dynamic Memory Allocation functions: => Run-time Memory Allocation.
 
 # Pointer:
 
-Pointer is special varible that hold the address of any memory (address).
+Pointer is special variableable that hold the address of any memory (address).
 
-To create pointer varible it should start with * symbol.
+To create pointer variableable it should start with * symbol.
 
-	Syntax: datatype *pointerVarible;
+	Syntax: datatype *pointerVariable;
 
 	for e.g,
 	#include<stdio.h>
 	void main(){
-		int a; //Varible
+		int a; //variable
 		a = 10;
 		printf("%d\n", a);
 		printf("%u\n", &a);
@@ -127,7 +127,7 @@ structureVariable->MemberName //Arrow operator
 	for e.g,
 	#include<stdio.h>
 	void main(){
-		int a = 11, b=22, c=33,d=44.,e=55; //Varible
+		int a = 11, b=22, c=33,d=44, e=55; //variable
 		int *ptr[5];
 		ptr[0] = &a;
 		ptr[1] = &b;
