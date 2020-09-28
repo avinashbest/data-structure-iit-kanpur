@@ -54,7 +54,7 @@ Function Calling:
 # Array:
 	-> An Array is a collection of similar data items and these data items may be all int, float or all char.
 	-> Each member of an array is identified by unique index or subscript assigned to it.
-	-> An Array is defined in the same way as a variable defined except that array name is followed by ono or more, expressions, enclosed withing square brackets[], specifying the array dimension.
+	-> An Array is defined in the same way as a variable is defined except that, the array name is followed by one or more expressions, enclosed withing square brackets[], specifying the array dimension.
 	-> The general Syntax of an array is:
 
 SYNTAX: data_type ArrayName[SIZE];
@@ -73,9 +73,9 @@ Dynamic Memory Allocation functions: => Run-time Memory Allocation.
 
 # Pointer:
 
-Pointer is special variableable that hold the address of any memory (address).
+Pointer is special variable that holds the address of any memory (address).
 
-To create pointer variableable it should start with * symbol.
+To create pointer variable, variable should start with * symbol.
 
 	Syntax: datatype *pointerVariable;
 
@@ -144,16 +144,16 @@ structureVariable->MemberName //Arrow operator
 1. Data Structure is a representation of logical relationship existing between individual elements of data.
 2. In other words, a data structure defines a way of organizing all data items that considers not only the elements stored	but also their relationship to each other.
 3. The term data structure is used to describe the way data is stored.
-4. To develop a program of an algorithm we should select an appropriate data structure for that algorithm. Therefore, data structure is represented as:
+4. To develop a program of an algorithm, we should select an appropriate data structure for that algorithm. Therefore, data structure is represented as:
 
-		Algorithm + Data Structure = Program.
+		Algorithm + Data Structure = Program
 
 # Algorithm:
 
 An algorithm is a finite sequence of instructions, each of which has a clear meaning and can
 be performed with a finite amount of effort in a finite length of time. No matter what the
 input values may be, an algorithm terminates after executing a finite number of instructions.
-In addition every algorithm must satisfy the following criteria:
+In addition, every algorithm must satisfy the following criteria:
 
 	1. Input: there are zero or more quantities, which are externally supplied;
 
@@ -175,7 +175,7 @@ program needs to run it self.
 2. A computer program always needs some amount of memory
 to run which is allocated to it by Operating System.
 
-		To run any process an O.S. Allocates it separate memory.
+		To run any process, an O.S. allocates it, separate memory.
 
 3. A program requests the amount of memory which it needs
 to run itself from O.S. Then OS Manages this memory.
@@ -186,15 +186,15 @@ to run itself from O.S. Then OS Manages this memory.
 
 # Different Part Of Program Memory
 	Program Code
-	1. it is the area which is used to store all source code
+	1. It is the area which is used to store all source code
 	like .c Or .cpp files.
 
 	2. Stack
-	It is the are which is used to store variables like
+	It is the area which is used to store variables like
 	int a, char name[20], float height
 
 	3. Heap
-	It is the are which operating system allocates us when we
+	It is the area which operating system allocates us when we
 	request it at run time of a program.
 
 int *ptr; //pointer to integer
@@ -230,7 +230,7 @@ Types of type casting:
 	return_type void_pointer;
 
 	2. Void * calloc(int,int)
-	it also allocates specified number of bytes from heap but the difference is that memory is shattered.
+	It also allocates specified number of bytes from heap but the difference is that memory is shattered.
 
 	return_type void_pointer;
 
@@ -305,7 +305,7 @@ Addition and subtraction are the only arithmetic operations that can be performe
 
 2. Array is the most common data structure used to store collection of elements.
 
-3. Arrays are convenient to declare and provide the easy Syntax to access any element by its index number. Once the array is set up, access to any elements is convenient and fast.
+3. Arrays are convenient to declare and provide the easy Syntax to access any element by its index number. Once the array is set up, access to any element is convenient and fast.
 
 5. A linked list data structure include a series of connected nodes. Here, each node and the address of the next node.
 
@@ -358,7 +358,7 @@ Let us create a simple Linked List with three items to understand how this works
 
 # Circular Linked List:
 
-	A Circular linked list is variation if a linked list in which the last element is linked to the first element. This forms a circular loop.
+	A Circular linked list is variation of a linked list in which the last element is linked to the first element. This forms a circular loop.
 
 # Doubly Linked List:
 
