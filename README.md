@@ -379,3 +379,58 @@ Let us create a simple Linked List with three items to understand how this works
 	4. Insertion
 	5. Deletion
 	6. Updation
+
+# Inserting a node in the begining
+
+Algorithm to be followed to insert a new node at the beginning of the list:
+
+	1. Allocate new memory block
+	2. If the list is empty then start = newnode.
+	3. If the list is not empty, follow the steps given below:
+
+			newnode -> next = start;
+			start = newnode;
+
+# Inserting a node at the end
+
+Algorithm to inset a new node at the end of the list:
+
+		1. Allocate new memory block.
+		2. If the list is empty then start = newnode
+		3. If the list is not empty follow the steps given below:
+
+				temp = start;
+				while(temp->next != NULL){
+					temp = temp->next;
+				}
+				temp->next = newnode;
+
+# Inserting a node at intermediate (Specific) Position
+
+Algorithm to insert a new node in an intermediate position in the list:
+
+		1. Allocate new memory block
+		2. Ensure that the specified position is in between first node and last node. If not, specified position is invalid.
+		3. Store the starting address (which is in start pointer) in temp and prev pointers.
+		4. Then traverse the temp pointer upto the specified position followed by prev pointer.
+		5. After reaching the specified position, follow the steps given below:
+					prev -> next = newnode;
+					newnode -> next = temp;
+
+# Linked List Applications
+
+	1. Dynamic Memory Allocation.
+	2. Implemented in stack and queue.
+	3. In undo functionality of software
+	4. Hash tables, Graphs
+
+# STACK
+
+	1. A stack is a list of elements in which an element may be inserted or deleted only at one end, called the top of the stack. Stacks are sometimes known as LIFO(Last in, first out) lists.
+
+	2. As the items can be added or removed only from the top i.e, the last item to be added to added to a stack is the first item to be removed.
+
+	3. The two basic operations associated with stacks are:
+
+		Push: Is the term used to insert an element into a stack.
+		Pop: is the term used to delete an element from a stack.
