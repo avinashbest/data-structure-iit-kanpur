@@ -434,3 +434,12 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 		Push: Is the term used to insert an element into a stack.
 		Pop: is the term used to delete an element from a stack.
+		
+	4. Operations on Stacks:
+		a. Creation
+		b. Traversing
+		c. Searching
+		d. Insertion
+		e. Deletion
+		f. Updation
+
