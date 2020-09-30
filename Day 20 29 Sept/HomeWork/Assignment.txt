@@ -1,0 +1,49 @@
+Q. Converts following Infix notation to prefix
+
+a) A+B*C
+
+    => A+(B*C)
+    => (A+(B*C))
+    => +A*BC
+
+b) A+B*C/D
+
+    => A+(B*C)/D
+    => A+((B*C)D)
+    => (A+((B*C)/D))
+    => +A/*BCD
+
+c) A-B+C
+
+    => (A-B)+C
+    => ((A-B)+C)
+    => +-ABC
+
+Convert the following infix expressions to prefix notation: 
+a) ((A + 2) * (B + 4)) -1
+
+    => (((A + 2) * (B + 4)) -1)
+    => -*+A2+B1
+
+b) Z – ((((X + 1) * 2) – 5) / Y).
+
+    => (Z – ((((X + 1) * 2) – 5) / Y))
+    => -Z/-*+X125Y
+
+
+c) ((C * 2) + 1) / (A + B)
+
+    => (((C * 2) + 1) / (A + B))
+    => /+*C21+AB
+
+d) ((A + B) * C – (D - E)) ^ (F + G)
+
+   => (((A + B) * C) – (D - E)) ^ (F + G)
+   => ((((A + B) * C) – (D - E)) ^ (F + G))
+   => ^-*+ABC-DE+FG
+    
+e)  A – B / (C * D ^ E)
+   
+    => A – (B / (C * (D ^ E)))
+    => (A – (B / (C * (D ^ E))))
+    => -A/B*^DE
