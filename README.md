@@ -426,11 +426,11 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 # STACK:
 
-	1. A stack is a list of elements in which an element may be inserted or deleted only at one end, called the top of the stack. Stacks are sometimes known as LIFO(Last in, first out) lists.
+1. A stack is a list of elements in which an element may be inserted or deleted only at one end, called the top of the stack. Stacks are sometimes known as LIFO(Last in, first out) lists.
 
-	2. As the items can be added or removed only from the top i.e, the last item to be added to added to a stack is the first item to be removed.
+2. As the items can be added or removed only from the top i.e, the last item to be added to added to a stack is the first item to be removed.
 
-	3. The two basic operations associated with stacks are:
+3. The two basic operations associated with stacks are:
 
 		1. Push: Is the term used to insert an element into a stack.
 
