@@ -432,11 +432,11 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 	3. The two basic operations associated with stacks are:
 
-		Push: Is the term used to insert an element into a stack.
+		1. Push: Is the term used to insert an element into a stack.
 
 ![image](https://drive.google.com/uc?export=view&id=1bse0K_BUSvh3XpB3t9NNSwLJKNGq7OFt)
 
-		Pop: is the term used to delete an element from a stack.
+		2. Pop: is the term used to delete an element from a stack.
 
 ![image](https://drive.google.com/uc?export=view&id=1tOZLI3UjpWj0WGz2wg89EPKOULypt4fC)
 
