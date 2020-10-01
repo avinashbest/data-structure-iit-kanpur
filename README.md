@@ -433,7 +433,12 @@ Algorithm to insert a new node in an intermediate position in the list:
 	3. The two basic operations associated with stacks are:
 
 		Push: Is the term used to insert an element into a stack.
+
+![image](https://drive.google.com/uc?export=view&id=1bse0K_BUSvh3XpB3t9NNSwLJKNGq7OFt)
+
 		Pop: is the term used to delete an element from a stack.
+
+![image](https://drive.google.com/uc?export=view&id=1tOZLI3UjpWj0WGz2wg89EPKOULypt4fC)
 
 	4. Operations on Stacks:
 
@@ -447,7 +452,12 @@ Algorithm to insert a new node in an intermediate position in the list:
 # Representation of STACK:
 
 		1. Array Implementation of Stack(Static Implementation)
+
+![image](https://drive.google.com/uc?export=view&id=1OkToZvW0PEv-e_gbPnML_TTCc5j7NncO)
+
 		2. Linked List Implementation of Stack(Dynamic Implementation)
+
+![image](https://drive.google.com/uc?export=view&id=1LClIceVMNGbLwMuJAmO0IsDTB_H9Kzfv)
 
 # Applications of STACK:
 
@@ -572,7 +582,7 @@ operations on queues:
 
 # Representation of Queue:
 
-		<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1-sR8kTbwR2HwxTfv9ozZHpVwOVE4WOZk)
 
 # Queue Implementation:
 
