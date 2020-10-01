@@ -1,5 +1,5 @@
 Q. Converts following Infix notation to prefix
-
+	//SOLUTION -> AVINASH KUMAR
 a) A+B*C
 
     => A+(B*C)
