@@ -45,7 +45,7 @@ Function Calling:
 2. It can thereafter consist of any number of _(underscore), alphabets and numbers.
 3. No special characters other than _ is allowed.
 
-# 15 SEPT 2020
+# 15 SEPT 2020:
 
 	getch() -> To take input, user cannot see, on_spot assigning-> no need to press enter. => no argument with return
 	getche() -> To take input, user can see, on_spot assigning->  no need to press enter.
@@ -184,7 +184,7 @@ to run itself from O.S. Then OS Manages this memory.
 		1. Static memory allocation
 		2. Dynamic memory allocation
 
-# Different Part Of Program Memory
+# Different Part Of Program Memory:
 	Program Code
 	1. It is the area which is used to store all source code
 	like .c Or .cpp files.
@@ -283,21 +283,21 @@ Addition and subtraction are the only arithmetic operations that can be performe
 
 # Data Structure:
 	1. Primitive Data Structures
-			a. integer
-			b. float
-			c. char
-			d. pointer
+			1. integer
+			2. float
+			3. char
+			4. pointer
 	2. Non-Primitive Data Structures
-			a. Arrays
-			b. Lists
-					i. Linear Lists
-							>> Linked Lists
-							>> Stacks
-							>> Queues
-					ii. Non-Linear Lists
-							>> Graphs
-							>> Trees
-			c. Files
+			1. Arrays
+			2. Lists
+					1. Linear Lists
+							1. Linked Lists
+							2. Stacks
+							3. Queues
+					2. Non-Linear Lists
+							1. Graphs
+							2. Trees
+			3. Files
 
 # Linked List:
 
@@ -313,7 +313,7 @@ Addition and subtraction are the only arithmetic operations that can be performe
 	2. An address of another nodes
 	3. We wrap both the data item and the next node reference in a struct.
 
-# Representation of Linked List
+# Representation of Linked List:
 
 	struct node{
 		int data;
@@ -371,7 +371,7 @@ Let us create a simple Linked List with three items to understand how this works
 
 	NOTE: The power of Linked List comes from the ability to break the chain and rejoin it.
 
-# Operations on linked list
+# Operations on linked list:
 
 	1. Creation
 	2. Traversing
@@ -380,7 +380,7 @@ Let us create a simple Linked List with three items to understand how this works
 	5. Deletion
 	6. Updation
 
-# Inserting a node in the begining
+# Inserting a node in the begining:
 
 Algorithm to be followed to insert a new node at the beginning of the list:
 
@@ -391,7 +391,7 @@ Algorithm to be followed to insert a new node at the beginning of the list:
 			newnode -> next = start;
 			start = newnode;
 
-# Inserting a node at the end
+# Inserting a node at the end:
 
 Algorithm to inset a new node at the end of the list:
 
@@ -405,7 +405,7 @@ Algorithm to inset a new node at the end of the list:
 				}
 				temp->next = newnode;
 
-# Inserting a node at intermediate (Specific) Position
+# Inserting a node at intermediate (Specific) Position:
 
 Algorithm to insert a new node in an intermediate position in the list:
 
@@ -417,14 +417,14 @@ Algorithm to insert a new node in an intermediate position in the list:
 					prev -> next = newnode;
 					newnode -> next = temp;
 
-# Linked List Applications
+# Linked List Applications:
 
 	1. Dynamic Memory Allocation.
 	2. Implemented in stack and queue.
 	3. In undo functionality of software
 	4. Hash tables, Graphs
 
-# STACK
+# STACK:
 
 	1. A stack is a list of elements in which an element may be inserted or deleted only at one end, called the top of the stack. Stacks are sometimes known as LIFO(Last in, first out) lists.
 
@@ -434,12 +434,147 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 		Push: Is the term used to insert an element into a stack.
 		Pop: is the term used to delete an element from a stack.
-		
-	4. Operations on Stacks:
-		a. Creation
-		b. Traversing
-		c. Searching
-		d. Insertion
-		e. Deletion
-		f. Updation
 
+	4. Operations on Stacks:
+
+		1. Creation
+		2. Traversing
+		3. Searching
+		4. Insertion
+		5. Deletion
+		6. Updation
+
+# Representation of STACK:
+
+		1. Array Implementation of Stack(Static Implementation)
+		2. Linked List Implementation of Stack(Dynamic Implementation)
+
+# Applications of STACK:
+
+		a. Stack Frames (Memory Structure)
+		b. Reversing a String
+		c. Calculation of Expressions
+
+<!-- Image of Memory Layout STACK Frames -->
+
+# Algebraic Expressions:
+
+		1. An Algebraic expressions is a legal combination of operators and operands.
+		2. Operand is the quantity on which a mathematical operation is performed. Operand may be a variable like x, y, z or a constant like 5, 4, 6 etc.
+		3. Operator is a symbol which signifies a mathematical or logical operation between the operands. Examples of familiar operators include +, -, *, /, ^ etc.
+		4. An Algebraic expression can be represented using three notations. They are infix, postfix and prefix notations.
+
+# Infix:
+It is the form of an arithmetic expression in which we fix (place) the
+arithmetic operator in between the two operands.
+
+		Example: A+B
+		(A + B) * (C - D)
+
+Prefix: It is the form of an arithmetic notation in which we fix (place) the arithmetic operator before (pre) its two operands. The prefix notation is called as polish notation.
+
+		Example: +AB
+		*+AB - CD
+
+Postfix: It is the form of an arithmetic expression in which we fix (place) the arithmetic operator after (post) its two operands. The postfix notation is called as suffix notation and is also referred to reverse polish notation.
+
+		Example: AB+
+		AB + CD -*
+
+# Five Binary Operations: +, -, *, /, ^(exponentiation)
+For these binary operations, the following in the order of precedence (highest to lowest):
+
+| Operator    				| Precedence   		|
+| :----------: 				| :-----------: 	|
+| exponentiation(^)   | Highest    			|
+| *, /   							| Next Highest 		|
+| +, - 								|Lowest						|
+
+# Convert Infix notation to prefix:
+
+		1. If a infix expression is given so first check precedence of
+		operators and make brackets according to that.
+
+		This means higher precedence operator bracket first.
+
+		2. We need to traverse whole expression and find opening
+		brackets if finds fetch operator that combined in between
+		them and if any operand will encountered then this will write in same sequence.
+
+		3. If any operator or closing bracket is encountered so ignore
+		that.
+
+				for e.g. A+B*C
+						=> A+(B*C)
+						=> (A+(B*C))
+						=> +A*BC
+
+				for e.g. A*B+CAD
+						=> A*B+(CAD)
+						=> (A*B)+(CAD)
+						=> ((A*B)+(C^D))
+						=> +*AB^CD
+
+
+				for e.g. A^B*C-D/E
+						=> (A^B) *C-D/E
+						=> ((A^B) *C)-D/E
+
+				for e.g. ((A^B) *C)-(D/E)
+						=> (((A^B) *C)-(D/E))
+						=> -*^ABC/DE
+
+
+# Convert Infix notation to postfix:
+1. If a infix expression is given so first check precedence of
+operators and make brackets according to that.
+This means higher precedence operator bracket first.
+
+2. we need to traverse whole expression and find closing
+brackets if finds fetch operator that combined in between
+them and if any operand will encountered then this will write
+in same sequence.
+
+3. If any operator or opening bracket is encountered so
+ignore that.
+
+				for e.g. A+B*C
+						=> A+(B*C)
+						=> (A+(B*C))
+						=> ABC*+
+
+				for e.g. A+B*C/D
+						=> A+(B*C) /D
+						=> A+((B*C) /D)
+						=> (A+((B*C) /D))
+						=> ABC*D/+
+
+				for e.g. (A + B) * (C - D) / E
+						=> ((A+B) *(C-D)) /E
+						=> (((A+B) *(C-D)) /E)
+						=> Postfix: AB+CD-*E/
+						=> Prefix: *+AB-CDE
+
+# Queue:
+1. A queue is another special kind of list, where items are
+inserted at one end called the rear and deleted at the other end
+called the front. Another name for a queue is a "FIFO" or
+"First-in-first-out" list.
+
+2. The operations for a queue are analogues to those for a stack,
+the difference is that the insertions go at the end of the list,
+rather than the beginning. We shall use the following
+operations on queues:
+
+		1. enqueue: which inserts an element at the end of the queue.
+
+		2. dequeue: which deletes an element at the start of the queue.
+
+# Representation of Queue:
+
+		<!-- Image -->
+
+# Queue Implementation:
+
+		1. Using Array
+		2. Using Linked List
