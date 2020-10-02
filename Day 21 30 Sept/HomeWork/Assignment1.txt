@@ -1,0 +1,65 @@
+Q1. Converts following Infix notation to prefix:
+
+        a). A+B/C-D
+
+            => A+(B/C)-D
+            => (A+(B/C))-D
+            => ((A+(B/C))-D)
+            => -+A/BCD
+
+        b). (A+B)/(C-D)
+
+            => (A+B)/(C-D)
+            => ((A+B)/(C-D))
+            => /+AB-CD
+
+        c). (A+B)*C/D
+
+            => ((A+B)*C)/D
+            => (((A+B)*C)/D)
+            => /*+ABCD
+
+        d). A/B^C-D 
+
+            => A/(B^C)-D 
+            => (A/(B^C))-D
+            => ((A/(B^C))-D)
+            => -/A^BCD
+
+Q2. Convert the following infix expressions to postfix notation: 
+
+        a). A-B/(C*D^E)
+
+            => A-B/(C*(D^E))
+            => A-(B/(C*(D^E)))
+            => (A-(B/(C*(D^E))))
+            => ABCDE^*/-
+
+        b). A/B^C+D
+
+            => A/B^C+D
+            => A/(B^C)+D
+            => (A/(B^C))+D
+            => ((A/(B^C))+D)
+            => AB^/D+
+
+        c). (A*B+(C/D))-F
+
+            => ((A*B)+(C/D))-F
+            => (((A*B)+(C/D))-F)
+            => AB*CD/+F-
+
+        d). (A+B)*C/D+E^F/G
+
+            => (A+B)*C/D+(E^F)/G
+            => ((A+B)*C)/D+(E^F)/G
+            => (((A+B)*C)/D)+((E^F)/G)
+            => ((((A+B)*C)/D)+((E^F)/G))
+            => AB+C*D/EF^G/+
+
+        e). A+(B*C-(D/E^F)*G)*H
+
+            => A+(B*C-(D/(E^F))*G)*H
+            => A+((((B*C)-(D/(E^F))*G))*H)
+            => (A+((((B*C)-(D/(E^F))*G))*H))
+            => ABC*DEF^/-GH*+
