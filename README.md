@@ -47,15 +47,26 @@ Function Calling:
 
 # 15 SEPT 2020:
 
-	getch() -> To take input, user cannot see, on_spot assigning-> no need to press enter. => no argument with return
-	getche() -> To take input, user can see, on_spot assigning->  no need to press enter.
-	getchar() -> To take input, user can see, for assigning pressing enter button is needed.
+	1. getch()
+
+		 => To take input, user cannot see, on the spot assigning
+		 => No need to press enter.
+		 => No argument with return.
+
+	2. getche()
+
+		 => To take input, user can see, on the spot assigning.
+		 => No need to press enter.
+
+	3. getchar()
+
+		 => To take input, user can see, for assigning pressing enter button is needed.
 
 # Array:
-	-> An Array is a collection of similar data items and these data items may be all int, float or all char.
-	-> Each member of an array is identified by unique index or subscript assigned to it.
-	-> An Array is defined in the same way as a variable is defined except that, the array name is followed by one or more expressions, enclosed withing square brackets[], specifying the array dimension.
-	-> The general Syntax of an array is:
+	1. An Array is a collection of similar data items and these data items may be all int, float or all char.
+	2. Each member of an array is identified by unique index or subscript assigned to it.
+	3. An Array is defined in the same way as a variable is defined except that, the array name is followed by one or more expressions, enclosed withing square brackets[], specifying the array dimension.
+	4. The general Syntax of an array is:
 
 SYNTAX: data_type ArrayName[SIZE];
 
@@ -245,13 +256,14 @@ Types of type casting:
 	scanf("%d", &a); or scanf("%d", ptr);
 
 # Pointer Increment & Scale Factor:
-	Pointer increment means its value is increased by the length of the data type that it points to, and this length is called as scale Factor.
+	1. Pointer increment means its value is increased by the length of the data type that it points to, and this length is called as scale Factor.
+
 		for e.g,
 			int *ptr;
 			ptr = ptr + 1;
 			ptr = 0x2012 + 4;
 
-	Sizeof(var_name) function is used to know the no of bytes need for that variable.
+	2. Sizeof(var_name) function is used to know the no of bytes need for that variable.
 
 # Operations with pointers:
 
@@ -358,11 +370,13 @@ Let us create a simple Linked List with three items to understand how this works
 
 # Circular Linked List:
 
-	A Circular linked list is variation of a linked list in which the last element is linked to the first element. This forms a circular loop.
+	A Circular linked list is variation of a linked list in which the last element is linked to the first element.
+	This forms a circular loop.
 
 # Doubly Linked List:
 
-	We add a pointer to the previous node in a Doubly-linked list. Thus, we can go in either direction: Forward or Backward.
+	We add a pointer to the previous node in a Doubly-linked list.
+	Thus, we can go in either direction: Forward or Backward.
 
 # Circular Doubly Linked List:
 
@@ -410,7 +424,8 @@ Algorithm to inset a new node at the end of the list:
 Algorithm to insert a new node in an intermediate position in the list:
 
 		1. Allocate new memory block
-		2. Ensure that the specified position is in between first node and last node. If not, specified position is invalid.
+		2. Ensure that the specified position is in between first node and last node.
+			 If not, specified position is invalid.
 		3. Store the starting address (which is in start pointer) in temp and prev pointers.
 		4. Then traverse the temp pointer upto the specified position followed by prev pointer.
 		5. After reaching the specified position, follow the steps given below:
@@ -472,9 +487,12 @@ Algorithm to insert a new node in an intermediate position in the list:
 # Algebraic Expressions:
 
 		1. An Algebraic expressions is a legal combination of operators and operands.
-		2. Operand is the quantity on which a mathematical operation is performed. Operand may be a variable like x, y, z or a constant like 5, 4, 6 etc.
-		3. Operator is a symbol which signifies a mathematical or logical operation between the operands. Examples of familiar operators include +, -, *, /, ^ etc.
-		4. An Algebraic expression can be represented using three notations. They are infix, postfix and prefix notations.
+		2. Operand is the quantity on which a mathematical operation is performed.
+			 Operand may be a variable like x, y, z or a constant like 5, 4, 6 etc.
+		3. Operator is a symbol which signifies a mathematical or logical operation between the operands.
+			 Examples of familiar operators include +, -, *, /, ^ etc.
+		4. An Algebraic expression can be represented using three notations.
+			 They are infix, postfix and prefix notations.
 
 # Infix:
 It is the form of an arithmetic expression in which we fix (place) the
