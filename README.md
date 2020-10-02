@@ -461,11 +461,13 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 # Applications of STACK:
 
-		a. Stack Frames (Memory Structure)
+		a. Stack Frame (Memory Structure)
 		b. Reversing a String
 		c. Calculation of Expressions
 
-<!-- Image of Memory Layout STACK Frames -->
+# Stack Frame / Memory Layout:
+
+![image](https://drive.google.com/uc?export=view&id=1IhpZkOZ-4d8mziDXa1rgxNFdBplECMn5)
 
 # Algebraic Expressions:
 
