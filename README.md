@@ -407,7 +407,7 @@ Algorithm to be followed to insert a new node at the beginning of the list:
 
 # Inserting a node at the end:
 
-Algorithm to inset a new node at the end of the list:
+Algorithm to insert a new node at the end of the list:
 
 		1. Allocate new memory block.
 		2. If the list is empty then start = newnode
@@ -443,7 +443,7 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 1. A stack is a list of elements in which an element may be inserted or deleted only at one end, called the top of the stack. Stacks are sometimes known as LIFO(Last in, first out) lists.
 
-2. As the items can be added or removed only from the top i.e, the last item to be added to added to a stack is the first item to be removed.
+2. As the items can be added or removed only from the top i.e, the last item to be added to a stack is the first item to be removed.
 
 3. The two basic operations associated with stacks are:
 
@@ -451,18 +451,18 @@ Algorithm to insert a new node in an intermediate position in the list:
 
 ![image](https://drive.google.com/uc?export=view&id=1bse0K_BUSvh3XpB3t9NNSwLJKNGq7OFt)
 
-		2. Pop: is the term used to delete an element from a stack.
+		2. Pop: Is the term used to delete an element from a stack.
 
 ![image](https://drive.google.com/uc?export=view&id=1tOZLI3UjpWj0WGz2wg89EPKOULypt4fC)
 
-	4. Operations on Stacks:
+4. Operations on Stacks:
 
-		1. Creation
-		2. Traversing
-		3. Searching
-		4. Insertion
-		5. Deletion
-		6. Updation
+	1. Creation
+	2. Traversing
+	3. Searching
+	4. Insertion
+	5. Deletion
+	6. Updation
 
 # Representation of STACK:
 
@@ -608,3 +608,19 @@ operations on queues:
 
 		1. Using Array
 		2. Using Linked List
+
+# Searching:
+
+1. Refers to the operation of finding the location of a given item in a collection of items.
+2. Searching is a technique of finding an element from the given data list or set of the elements like an array, list or trees.
+3. It is a technique to find out an element in a sorted or unsorted list.
+3. Types of Searching:
+
+		1. Linear (Sequential) Search
+		2. Binary Search
+
+# Sorting:
+
+Refers to the operation of arranging data in some given order,
+such as increasing or decreasing, with numerical data,
+or alphabetically, with character data.
