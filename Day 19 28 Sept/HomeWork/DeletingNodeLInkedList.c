@@ -1,7 +1,7 @@
 // Create linked list and delete first element and last element.
 #include <stdio.h>
 #include <stdlib.h>
-//Singly Linked List
+
 void insert();
 void show();
 void delete_first();

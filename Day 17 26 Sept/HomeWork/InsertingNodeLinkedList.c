@@ -6,8 +6,8 @@ Insertion a Node :
 */
 #include <stdio.h>
 #include <stdlib.h>
-//Singly Linked List
 void insert();
+//Singly Linked List
 void show();
 void begining();
 void intermediate();
@@ -89,7 +89,7 @@ void begining()
 	node->next = NULL; //Optional
 	node->next = start;
 	start = node;
-	printf("\nElement is Added Succesfully!\n");
+	printf("\nElement is Added Successfully!\n");
 }
 
 void intermediate()
