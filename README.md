@@ -294,22 +294,7 @@ Addition and subtraction are the only arithmetic operations that can be performe
 		sum += *p2;
 
 # Data Structure:
-	1. Primitive Data Structures
-			1. integer
-			2. float
-			3. char
-			4. pointer
-	2. Non-Primitive Data Structures
-			1. Arrays
-			2. Lists
-					1. Linear Lists
-							1. Linked Lists
-							2. Stacks
-							3. Queues
-					2. Non-Linear Lists
-							1. Graphs
-							2. Trees
-			3. Files
+![image](https://drive.google.com/uc?export=view&id=1ITXoDo-VtJ9W_toIAqrjXPcMIDHdbido)
 
 # Linked List:
 
