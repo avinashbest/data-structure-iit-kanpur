@@ -611,6 +611,8 @@ Refers to the operation of arranging data in some given order, such as increasin
 - In each iteration, the comparison takes place up to the last unsorted element.
 - The array is sorted when all the unsorted elements are placed at their correct positions.
 
+<!-- Image -->
+
 # Tree:
 
 - A tree is a non-linear hierarchical data structure taht consists of nodes connected by edges.
@@ -652,3 +654,134 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - The height of a node is the number of edges from the node to the deepest leaf (i.e,he longest path fromt he node to a leaf node).
 #### Depth of a Node:
 - The depth of a node is the number of edges from the root to the node.
+
+#### Subtree:
+- Any node of tree, with all of its descendants is a subtree.
+
+#### Level:
+- The level of the node refers to its distance from the root. The root of the tree has level O, and the level of any other node in the tree is one more thatn the level of its parent. For e.g., In the binary tree of figure above node F is at level 2 and node H is at level 3.
+- The maximum number of nodes at any level is 2^n. 
+
+<!-- Image -->
+
+#### Height of a Tree:
+- The height of a Tree is the height of the root node or the depth of the deepest node.
+<!-- Image -->
+
+#### Degree of a Node:
+- The degree of a node is the total number of branches of that node.
+
+#### Forest:
+- A collection of disjoint trees is called a forest.
+
+<!-- Image -->
+
+- You can create a forest by cutting the root of a tree.
+
+#### Terminal Node:
+- A node with degree zero is called a terminal node or a leaf
+
+#### Non - Terminal Node:
+- Any node (except the root node) whose degree is not zero is called non - terminal node, also called intermediate nodes.
+
+## Types of Tree:
+
+	1. Binary Tree
+	2. Binary Search Tree
+	3. AVL Tree
+	4. B - Tree
+
+# Binary Tree:
+- In general, tree nodes can have any number of children. In a binary tree, each node can have at most two children.
+- A binary tree is either empty or consists of a node called the root together with two binary trees called the <strong>left-subtree</strong> and the <strong>right-subtree.</strong>
+- A tree with no nodes is called as a NULL Tree.
+- A binary tree is shown in figure:
+<!-- Image -->
+- Binary Trees are easy to implement beacause they have a small, fixed number of child links. Because of this characteristics, binary trees are the most common types of trees and form the basis of many important data structures.
+
+### Level in Binary Tree:
+
+<strong>Assigning level numbers and Numbering of nodes for a binary tree: </strong>
+
+- The nodes of a binary tree can be numbered in a natural way, level by level, left to right.
+- The nodes of a complete binary tree can be numbered so that the root is assigned the number 1, a left child is assigned twice the number assigned its parent, and a right child is assigned one more thatn twice the number assigned its parent. For e.g.
+<!-- Image -->
+
+### Construction of Binary Tree:
+<!-- Image -->
+
+### Binary Tree Traversal Techniques:
+- A tree traversal is a method of visting every node in the tree. By visit, we mean that some type of operation is performe. For e.g. You may wish to print the content of the nodes. 
+- There are following ways to traverse a bianry tree:
+
+		1. Preorder
+		2. Inorder
+		3. Postorder
+
+- In the first three traversal methods, the left subtre of a node is traversed before the right subtree. The difference among them comes from the difference in the time at which a root node is visted.
+
+### Inorder Traversal:
+- In the case of inorder traversal, the root of each subtree is visited after its left subtree has been traversed but before the traversal of its right subtree begins. 
+- The steps for traversing a binary tree in inorder traversal are:
+
+		1. Visit the left subtree, using inorder.
+		2. Visit the root.
+		3. Visit the right subtree, using inorder.
+
+### Preorder Traversal:
+- In a preorder traversal, each root node is visited before its left and right subtrees are traversed. Preorder search is also called<strong> backtracking</strong>.
+- The steps for traversing a binary tree in preorder traversal are:
+
+		1. Visit the root.
+		2. Visit the left subtree, using inorder.
+		3. Visit the right subtree, using inorder.
+
+### Postorder Traversal:
+- In a postorder traversal, each root is visited after its left and right subtrees have been traversed.
+- The steps for traversing a binary treeis postorder traversal are:
+
+		1. Visit the left subtree, using inorder.
+		2. Visit the right subtree, using inorder.
+		3. Visit the root.
+
+# NOTE: 
+
+		1. Inorder: Left ROOT Right
+		2. Preorder: ROOT Left Right
+		3. Postorder: Left Right ROOT
+
+- For example:
+<!-- Image Question-->
+<!-- Image Preorder -->
+<!-- Image Postorder -->
+<!-- Image Inorder -->
+
+# Binary Search Tree:
+- Binary Search tree can be defined as a class of binary trees, in which the nodes are arranged in a specific order. This is also called ordered binary tree.
+- In a binary search tree, the value of all the nodes in the left sub-tree is less than the calue of the root. 
+- Similarly, value of all the nodes in the righub-tree is greater than or equal to the value of the root.
+- This rule will be recursively applied to all the left and right sub-trees of the root.
+<!-- Image Binary Search Tree -->
+
+- Create the binary search tree using the following data elements:
+43	10	79	90	12	54	11	9	50
+- Solution:
+1. Insert 43 into the tree as the root of the tree.
+2. Read the next element, if its is lesser than the root node element, inset it as the root of the left sub-tree.
+3. Otherwise, insert it as the root of the right of the right sub-tree.
+4. The process of creating BST by using the given elements, is shown in figure below:
+<!-- Image Process Creating BST -->
+
+## Technique of converting an expression into binary tree:
+
+#### Divide Conquor technique is used to convert an expression into binary tree
+
+1. To convert in a binary tree we should parenthesis on expression according to order of precendence.
+2. Parenthesis expression will be evaluated and added to the left expression and go on dividing expressions as follow till we get element operand.
+
+<!-- Image e.g Notebook -->
+
+# Advantages of using BST:
+- Searching becomes very efficient in a binary search tree since, we get a hint each step, about which sub-tree contains the desired element.
+- The binary search tree is considered as efficient data structure in compare to arrays and linked lists. In searching process, it removes half sub-tree at every step. Searching for an element in a binary tree takes O(log2n) time. In worst case, the time it takes to serach an element is O(n).
+- It also speed up the insertion and deletion operations as compare to that in array and linked list.
