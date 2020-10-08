@@ -611,12 +611,12 @@ Refers to the operation of arranging data in some given order, such as increasin
 - In each iteration, the comparison takes place up to the last unsorted element.
 - The array is sorted when all the unsorted elements are placed at their correct positions.
 
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1UV1q1qmpCBjLpB0otwo_zSIqJJVyOAVc)
 
 # Tree:
 
 - A tree is a non-linear hierarchical data structure taht consists of nodes connected by edges.
-<!-- Image -->
+
 ## Tree Terminologies:
 #### Node:
 - A node is an entity that contains a key or value and pointers
@@ -628,7 +628,8 @@ node.
 #### Edge:
 - It is the link between any two nodes.
 
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1lKb2zi-MZm6v_En-rpIzLDvrkaVrtYUH)
+
 #### Leaf node:
 - A node with no children is called a leaf (or external node).
 A node which is not a leaf is called an internal node.
@@ -661,20 +662,18 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 #### Level:
 - The level of the node refers to its distance from the root. The root of the tree has level O, and the level of any other node in the tree is one more thatn the level of its parent. For e.g., In the binary tree of figure above node F is at level 2 and node H is at level 3.
 - The maximum number of nodes at any level is 2^n. 
-
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1GwqJ5RIvG1kya2cPGIlcwzQXtDrR8n5h)
 
 #### Height of a Tree:
 - The height of a Tree is the height of the root node or the depth of the deepest node.
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1OrqYao4X2TmnoNgu_vCx12n8WZW6WmM5)
 
 #### Degree of a Node:
 - The degree of a node is the total number of branches of that node.
 
 #### Forest:
 - A collection of disjoint trees is called a forest.
-
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1_kQdMhfvF7C-01RJcunXQl7J4E4NUTX-)
 
 - You can create a forest by cutting the root of a tree.
 
@@ -696,7 +695,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - A binary tree is either empty or consists of a node called the root together with two binary trees called the <strong>left-subtree</strong> and the <strong>right-subtree.</strong>
 - A tree with no nodes is called as a NULL Tree.
 - A binary tree is shown in figure:
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1Bg1XcmwkgMEOtK4i08nP2D0EFq095n94)
 - Binary Trees are easy to implement beacause they have a small, fixed number of child links. Because of this characteristics, binary trees are the most common types of trees and form the basis of many important data structures.
 
 ### Level in Binary Tree:
@@ -705,10 +704,10 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 
 - The nodes of a binary tree can be numbered in a natural way, level by level, left to right.
 - The nodes of a complete binary tree can be numbered so that the root is assigned the number 1, a left child is assigned twice the number assigned its parent, and a right child is assigned one more thatn twice the number assigned its parent. For e.g.
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1tge4BRxXDz5mVjK0r4A57vts0GTIbxNI)
 
 ### Construction of Binary Tree:
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1hEJC0W7908bk9EzOHSnHbrZ8F-LyTTFH)
 
 ### Binary Tree Traversal Techniques:
 - A tree traversal is a method of visting every node in the tree. By visit, we mean that some type of operation is performe. For e.g. You may wish to print the content of the nodes. 
@@ -751,10 +750,13 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 		3. Postorder: Left Right ROOT
 
 - For example:
-<!-- Image Question-->
-<!-- Image Preorder -->
-<!-- Image Postorder -->
-<!-- Image Inorder -->
+![image](https://drive.google.com/uc?export=view&id=1UUAIw-9F_AeSCq0lydtj-in08ymrjX2Y)
+
+![image](https://drive.google.com/uc?export=view&id=1gB3A-g9-QWOEQby25GKblaaTcQCK53RU)
+
+![image](https://drive.google.com/uc?export=view&id=1SEb9OIACOQevr1E2uyoicnI6iOxA9HzY)
+
+![image](https://drive.google.com/uc?export=view&id=1oHiGIHSd0bb_fRokqdLjVORGN3jXROdY)
 
 # Binary Search Tree:
 - Binary Search tree can be defined as a class of binary trees, in which the nodes are arranged in a specific order. This is also called ordered binary tree.
