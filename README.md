@@ -662,10 +662,12 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 #### Level:
 - The level of the node refers to its distance from the root. The root of the tree has level O, and the level of any other node in the tree is one more thatn the level of its parent. For e.g., In the binary tree of figure above node F is at level 2 and node H is at level 3.
 - The maximum number of nodes at any level is 2^n. 
+
 ![image](https://drive.google.com/uc?export=view&id=1GwqJ5RIvG1kya2cPGIlcwzQXtDrR8n5h)
 
 #### Height of a Tree:
 - The height of a Tree is the height of the root node or the depth of the deepest node.
+
 ![image](https://drive.google.com/uc?export=view&id=1OrqYao4X2TmnoNgu_vCx12n8WZW6WmM5)
 
 #### Degree of a Node:
@@ -673,6 +675,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 
 #### Forest:
 - A collection of disjoint trees is called a forest.
+
 ![image](https://drive.google.com/uc?export=view&id=1_kQdMhfvF7C-01RJcunXQl7J4E4NUTX-)
 
 - You can create a forest by cutting the root of a tree.
@@ -695,6 +698,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - A binary tree is either empty or consists of a node called the root together with two binary trees called the <strong>left-subtree</strong> and the <strong>right-subtree.</strong>
 - A tree with no nodes is called as a NULL Tree.
 - A binary tree is shown in figure:
+
 ![image](https://drive.google.com/uc?export=view&id=1Bg1XcmwkgMEOtK4i08nP2D0EFq095n94)
 - Binary Trees are easy to implement beacause they have a small, fixed number of child links. Because of this characteristics, binary trees are the most common types of trees and form the basis of many important data structures.
 
@@ -704,6 +708,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 
 - The nodes of a binary tree can be numbered in a natural way, level by level, left to right.
 - The nodes of a complete binary tree can be numbered so that the root is assigned the number 1, a left child is assigned twice the number assigned its parent, and a right child is assigned one more thatn twice the number assigned its parent. For e.g.
+
 ![image](https://drive.google.com/uc?export=view&id=1tge4BRxXDz5mVjK0r4A57vts0GTIbxNI)
 
 ### Construction of Binary Tree:
@@ -750,6 +755,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 		3. Postorder: Left Right ROOT
 
 - For example:
+
 ![image](https://drive.google.com/uc?export=view&id=1UUAIw-9F_AeSCq0lydtj-in08ymrjX2Y)
 
 ![image](https://drive.google.com/uc?export=view&id=1gB3A-g9-QWOEQby25GKblaaTcQCK53RU)
@@ -766,12 +772,15 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 <!-- Image Binary Search Tree -->
 
 - Create the binary search tree using the following data elements:
-43	10	79	90	12	54	11	9	50
+
+		43	10	79	90	12	54	11	9	50
 - Solution:
-1. Insert 43 into the tree as the root of the tree.
-2. Read the next element, if its is lesser than the root node element, inset it as the root of the left sub-tree.
-3. Otherwise, insert it as the root of the right of the right sub-tree.
-4. The process of creating BST by using the given elements, is shown in figure below:
+
+		1. Insert 43 into the tree as the root of the tree.
+		2. Read the next element, if its is lesser than the root node element, 
+		   insert it as the root of the left sub-tree.
+		3. Otherwise, insert it as the root of the right of the right sub-tree.
+		4. The process of creating BST by using the given elements, is shown in figure below:
 <!-- Image Process Creating BST -->
 
 ## Technique of converting an expression into binary tree:
@@ -787,3 +796,6 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - Searching becomes very efficient in a binary search tree since, we get a hint each step, about which sub-tree contains the desired element.
 - The binary search tree is considered as efficient data structure in compare to arrays and linked lists. In searching process, it removes half sub-tree at every step. Searching for an element in a binary tree takes O(log2n) time. In worst case, the time it takes to serach an element is O(n).
 - It also speed up the insertion and deletion operations as compare to that in array and linked list.
+
+		
+		Author - Avinash Kumar || Contact: avinashbest3@gmail.com
