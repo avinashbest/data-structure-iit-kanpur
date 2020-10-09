@@ -769,7 +769,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - In a binary search tree, the value of all the nodes in the left sub-tree is less than the calue of the root. 
 - Similarly, value of all the nodes in the righub-tree is greater than or equal to the value of the root.
 - This rule will be recursively applied to all the left and right sub-trees of the root.
-<!-- Image Binary Search Tree -->
+![image](https://drive.google.com/uc?export=view&id=1T5rbgY5jiPfKPdcnq8N6HpWp3HfCsBeU)
 
 - Create the binary search tree using the following data elements:
 
@@ -781,7 +781,9 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 		   insert it as the root of the left sub-tree.
 		3. Otherwise, insert it as the root of the right of the right sub-tree.
 		4. The process of creating BST by using the given elements, is shown in figure below:
-<!-- Image Process Creating BST -->
+![image](https://drive.google.com/uc?export=view&id=1jWswgdXLq7voFpEO8kMpMA9wNWcTFKj4)
+![image](https://drive.google.com/uc?export=view&id=1LiFs4jw6283rTxCNSDoUPsucySHrOFzf)
+![image](https://drive.google.com/uc?export=view&id=1ceqluIbPV1nkw2eRmiQ46KgXDPLuxSp4)
 
 ## Technique of converting an expression into binary tree:
 
@@ -790,7 +792,8 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 1. To convert in a binary tree we should parenthesis on expression according to order of precendence.
 2. Parenthesis expression will be evaluated and added to the left expression and go on dividing expressions as follow till we get element operand.
 
-<!-- Image e.g Notebook -->
+![image](https://drive.google.com/uc?export=view&id=1M3yllNaLH09Mtl4WUlvEtFvSazBYgI4b)
+![image](https://drive.google.com/uc?export=view&id=1929LNB9wiDyhtoX0jyI1SJNP9zjTMhbJ)
 
 # Advantages of using BST:
 - Searching becomes very efficient in a binary search tree since, we get a hint each step, about which sub-tree contains the desired element.
