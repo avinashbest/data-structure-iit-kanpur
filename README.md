@@ -769,6 +769,7 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - In a binary search tree, the value of all the nodes in the left sub-tree is less than the calue of the root. 
 - Similarly, value of all the nodes in the righub-tree is greater than or equal to the value of the root.
 - This rule will be recursively applied to all the left and right sub-trees of the root.
+
 ![image](https://drive.google.com/uc?export=view&id=1T5rbgY5jiPfKPdcnq8N6HpWp3HfCsBeU)
 
 - Create the binary search tree using the following data elements:
