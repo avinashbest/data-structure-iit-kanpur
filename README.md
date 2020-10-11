@@ -1,10 +1,7 @@
 # Compilation process of a program:
-- Commands can be used in powershell or cmd to step by step compilation:
+- Commands can be used in powershell to compile the source code.
 
-		1. gcc -E program.c -o program.i //Expandable Code
-		2. gcc -S program.i -o program.s //Assembly Code
-		3. gcc -E program.s -o program.o //Object Code
-		4. gcc -v program.o -o program.exe //Executable Code
+		gcc program.c -o program.exe
 
 ![image](https://drive.google.com/uc?export=view&id=1d8xK2HFH99DNw31xhIW5vZyvfv0MGxFh)
 
@@ -869,19 +866,19 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 3. Complete Binary Tree
 4. Extended Binary Tree
 
-# Strictly Binary Tree:
+## Strictly Binary Tree:
 - If every non-leaf node or non-terminal node in a binary tree has non empty left sub tree and right sub trees.
 - In other words, the degree of every non-leaf node will always be 2.
 - A strictly binary tree with n leaves always contains (2^n - 1) nodes.
 <!-- Image -->
 
-# Full Binary Tree:
+## Full Binary Tree:
 - A full binary tree of height h has all its leaves at level h. Alternatively; All non leaf nodes of a full binary tree have twp children, and the leaf nodes have no children.
 - A full binary tree with height h has 2^(h+1) - 1 nodes. A full binary tree of height is structly binary tree all of whose leaves are at level h. 
 - A full binary tree of height h contains 2^h leaves and 2^h - 1 non-leaf nodes.
 - For example, a full binary tree of height 3 contains 2^(3+1) - 1 = 15 nodes.
 <!-- Image -->
-# Complete Binary Tree:
+## Complete Binary Tree:
 - A Binary tree is said to be a complete binary tree if all of the leaves are located at the same level d.
 - A complete binary tree is a binary tree that contains exactly 2^n nodes at each level between level 0 and d.
 - The total number of nodes in a complete binary tree with depth d is 2d+l-l where leaf nodes are 2d while non-leaf nodes are 2d-l
@@ -904,39 +901,44 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 ## AVL Rotation:
 - We perform rotation in AV:L tree only in caser if Balance Factor is other than -1, 0 & 1.
 - There are basically four types of rotations which are as follows:
-#### LL Rotation:
+1. <strong> LL Rotation: </strong>
 Inserted node is in the left subtree of left subtree of A
-#### RR Rotation:
+1. <strong> RR Rotation: </strong>
 Inserted node is in the right subtree of right subtree of A
-#### LR Rotation:
+1. <strong> LR Rotation: </strong>
 Inserted node is in the right subtree of left subtree of A
-#### RL Rotation:
+1. <strong> RL Rotation: </strong>
 Inserted node is in the left subtree of right subtree of A
 
-# RR Rotation:
+### RR Rotation:
 - When BST becomes unbalanced, due to a node is inserted into the right subtree of the right subtree of A, then we perform RR rotation, RR rotation is an anticlockwise rotation, which is applied on the edge below a node having balance factor -2.
 <!-- Image -->
 - In above e.g, node A has balance factor -2 because a node C is inserted in the right subtree of A right subtree. We perform the RR rotation on the edge below A.
-# LL Rotation:
+### LL Rotation:
 - When BST becomes unbalanced, due to a node is inserted into the left subtree of the left subtree of C, then we perform LL rotation, LL rotation is clockwise rotation, which is applied on the edge below a node having balance factor 2.
 <!-- Image -->
 - In above e.g, node C has balance factor 2 because a node A is inserted in the left subtree of C left subtree. We perform the LL rotation on the edge below A.
-# LR Rotation:
+### LR Rotation:
 - Double rotations are bit tougher than single rotation which has already explained above.
-- LR rotation = RR rotation + LL rotation
+
+		LR rotation = RR rotation + LL rotation
+
 - i.e, First RR rotation is performed on subtree and then LL rotation is performed on full tree, by full tree we mean the first node from the node from the path of inserted node whose balance factor is other than -1, 0 & 1.
 <!-- Slide -->
 <!-- Slide -->
 <!-- Slide -->
-# RL Rotation:
+### RL Rotation:
 - Double rotations are bit tougher than single rotation which has already explained above.
-- RL rotation = LL rotation + RR rotation
+	
+		RL rotation = LL rotation + RR rotation
+
 - i.e, First LL rotation is performed on subtree and then RR rotation is performed on full tree, by full tree we mean the first node from the path of inserted node whose balance factor is other than -1, 0 & 1.
 <!-- Slide -->
 <!-- Slide -->
 <!-- Slide -->
 - Construct an AVL tree by inserting the following elements in the given order.
-- Elements: 63	9	19	27	18	108	99	81
+
+		Elements: 63, 9, 19, 27, 18, 108, 99, 81
 <!-- Slide -->
 <!-- Slide -->
 <!-- Slide -->
