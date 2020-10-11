@@ -46,8 +46,8 @@ int main(void)
             printf("Invalid Input!");
         }
     } while (choice != 0);
-    
-    rear->next = front; // Circular Queue
+
+    rear->next = front; // Circular Queue => Linking last node to the first node
 
     return 0;
 }
@@ -110,4 +110,3 @@ void dequeue()
         }
     }
 }
-

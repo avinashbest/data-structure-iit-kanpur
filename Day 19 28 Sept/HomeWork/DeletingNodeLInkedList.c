@@ -6,6 +6,7 @@ void insert();
 void show();
 void delete_first();
 void delete_last();
+void delete_intermediate();
 //Structure of the Node
 struct student
 {
@@ -24,6 +25,7 @@ int main(void)
 		printf("\nPress 2 to display elements.");
 		printf("\nPress 3 to delete the first element");
 		printf("\nPress 4 to delete the last element");
+		printf("\nPress 5 to delete element from intermediate postion");
 		printf("\nPress 0 to close.");
 		printf("\nEnter Your Choice: ");
 		scanf("%d", &choice);
@@ -42,6 +44,14 @@ int main(void)
 		else if (choice == 4)
 		{
 			delete_last();
+		}
+		else if (choice == 5)
+		{
+			delete_intermediate();
+		}
+		else if (choice == 0)
+		{
+			break;
 		}
 		else
 		{
@@ -90,28 +100,39 @@ void delete_first()
 
 void delete_last()
 {
-	struct student *lastnode, *second_last;
-	if (node == NULL)
+	struct student *s;
+	if (start != NULL)
 	{
-		printf("There is no element in the list.\n");
+		temp = start;
+		for (; temp->next != NULL; temp = temp->next)
+		{
+			s = temp;
+			s->next = NULL;
+			free(temp);
+			printf("\nElement Removed Successfully!");
+		}
 	}
 	else
 	{
-		lastnode = start;
-		second_last = start;
-		//Traverse to the last node of the List
-		while (lastnode->next != NULL)
-		{
-			second_last = lastnode;
-			lastnode = lastnode->next;
-		}
-		if (lastnode == node)
-		{
-			//Delete the last node;
-			free(lastnode);
-			//Disconnect the link of second last node with last node
-			second_last->next = NULL;
-			return;
-		}
+		printf("No Element!");
 	}
+}
+
+void delete_intermediate()
+{
+	int position;
+	struct student *p;
+	printf("Enter Position that you want to delete: ");
+	scanf("%d", &position);
+	position--;
+	temp = start;
+	for (int count = 1; count < position; count++)
+	{
+		temp = temp->next;
+	}
+	p = temp;
+	temp = temp->next;
+	p->next = temp->next;
+	free(temp);
+	printf("Element Removed Successfully!");
 }
