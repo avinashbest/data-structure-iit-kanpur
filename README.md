@@ -801,5 +801,144 @@ For the tree shown in above figure, the path between A and I is A, B, D, I.
 - The binary search tree is considered as efficient data structure in compare to arrays and linked lists. In searching process, it removes half sub-tree at every step. Searching for an element in a binary tree takes O(log2n) time. In worst case, the time it takes to serach an element is O(n).
 - It also speed up the insertion and deletion operations as compare to that in array and linked list.
 
-		
-		Author - Avinash Kumar || Contact: avinashbest3@gmail.com
+## Pre-Order Traversal:
+- Preorder traversal, the nodes are traversed according to the following sequence from any given node:
+
+	1. It will mark the current node as visited first.
+	2. Then, if a left child exists, it will go to the left sub-tree and continue the same process.
+	3. After visiting the left sub-tree, it wll then move to its right sub-tree, it will then move to its right sub-tree and continue the same process.
+
+- Since the sequence is node->left->right, it is referred to as a preorder traversal, since the node is visited before the left sub-tree.
+
+	```
+	void preorderTraversal(node* root)
+	{
+		if(root == NULL)
+		{
+			return;
+		}
+		printf("%d -> ", root->value);
+		preorderTraversal(root->left);
+		preorderTraversal(root->right);
+	}
+	```
+
+## Inorder Traversal:
+
+	```
+	void inorderTraversal(node* root)
+	{
+		if(root == NULL)
+		{
+			return;
+		}
+		inorderTraversal(root->left);
+		printf("%d -> ", root->value);
+		inorderTraversal(root->right);
+	}
+	```
+
+## PostOrder Traversal:
+- Post Order traversal, the nodes are traversed according to the following sequence from any given node:
+- If a left child exists, it will always go to it first.
+- After visiting the left sub-tree, it will then move to its right sub-tree.
+- After it visits the right sub-tree, it will finally visit the currently given node.
+- Since the sequence is left -> right -> node, it is referred to a postorder Traversal, since the nodes are visited at the last.
+	
+	1. If a left child exists, it will always go to it first. 
+	2. After visiting the left sub-tree, it will then move to its right sub-tree
+	3. After it visit the right sub-tree, it will finally visit the currently given node.
+
+	```
+	void postorderTraversal(node* root)
+	{
+		if(root == NULL)
+		{
+			return;
+		}
+		postorderTraversal(root->left);
+		postorderTraversal(root->right);
+		printf("%d -> ", root->value);
+	}
+	```
+
+# Types of Binary Tree:
+
+1. Strictly Binary Tree
+2. Full Binary Tree
+3. Complete Binary Tree
+4. Extended Binary Tree
+
+# Strictly Binary Tree:
+- If every non-leaf node or non-terminal node in a binary tree has non empty left sub tree and right sub trees.
+- In other words, the degree of every non-leaf node will always be 2.
+- A strictly binary tree with n leaves always contains (2^n - 1) nodes.
+<!-- Image -->
+
+# Full Binary Tree:
+- A full binary tree of height h has all its leaves at level h. Alternatively; All non leaf nodes of a full binary tree have twp children, and the leaf nodes have no children.
+- A full binary tree with height h has 2^(h+1) - 1 nodes. A full binary tree of height is structly binary tree all of whose leaves are at level h. 
+- A full binary tree of height h contains 2^h leaves and 2^h - 1 non-leaf nodes.
+- For example, a full binary tree of height 3 contains 2^(3+1) - 1 = 15 nodes.
+<!-- Image -->
+# Complete Binary Tree:
+- A Binary tree is said to be a complete binary tree if all of the leaves are located at the same level d.
+- A complete binary tree is a binary tree that contains exactly 2^n nodes at each level between level 0 and d.
+- The total number of nodes in a complete binary tree with depth d is 2d+l-l where leaf nodes are 2d while non-leaf nodes are 2d-l
+<!-- Image -->
+- A binary tree with n nodes is said to be complete if it contains all the first n nodes of the above numbering scheme.
+- A complete binary tree of height h looks like a full binary tree down to lvel (h-l), and the level h is filled from left to right.
+- A binary tree with n nodes and of depth d is strictly binary tree all of whose terminal node are at level d, in a complex binary tree, there is exactly one node at level 0, two nodes at level l, and four nodes at level 2 and so on.
+# Internal & External Nodes:
+- An internal node is a tree having atleast one-key and possibly some children. It is some times convenient to ahve another types of nodes, called an external node, and pretend that all null child links point to such a node. An external node doesn't exist, but serves as a conceptual place holder for nodes to be inserted.
+- We draw internal nodes using circles, with letters as labels. External nodes are denoted by squares. The square node version is sometimes called an extended binary tree. A binary tree with n internal nodes has (n+1) external nodes.
+<!-- Image -->
+
+# AVL Tree:
+- AVL Tree is invented by GM Adelson - Velsky and EM Landis in 1962. 
+- AVL Tree can be defined as <strong>height balanced binary search tree</strong> in which each node is associated with a balance factor which is calculated by subtracting the height of its right sub-tree from that of its left sub-tree.
+- Tree is said to be balanced if balance factor of each node is -1, 0 & 1, otherwise the tree will be unbalanced and need to be balanced.
+
+		Balance Factor = Height(Left Sub tree) - Height(Right Sub tree)
+
+## AVL Rotation:
+- We perform rotation in AV:L tree only in caser if Balance Factor is other than -1, 0 & 1.
+- There are basically four types of rotations which are as follows:
+#### LL Rotation:
+Inserted node is in the left subtree of left subtree of A
+#### RR Rotation:
+Inserted node is in the right subtree of right subtree of A
+#### LR Rotation:
+Inserted node is in the right subtree of left subtree of A
+#### RL Rotation:
+Inserted node is in the left subtree of right subtree of A
+
+# RR Rotation:
+- When BST becomes unbalanced, due to a node is inserted into the right subtree of the right subtree of A, then we perform RR rotation, RR rotation is an anticlockwise rotation, which is applied on the edge below a node having balance factor -2.
+<!-- Image -->
+- In above e.g, node A has balance factor -2 because a node C is inserted in the right subtree of A right subtree. We perform the RR rotation on the edge below A.
+# LL Rotation:
+- When BST becomes unbalanced, due to a node is inserted into the left subtree of the left subtree of C, then we perform LL rotation, LL rotation is clockwise rotation, which is applied on the edge below a node having balance factor 2.
+<!-- Image -->
+- In above e.g, node C has balance factor 2 because a node A is inserted in the left subtree of C left subtree. We perform the LL rotation on the edge below A.
+# LR Rotation:
+- Double rotations are bit tougher than single rotation which has already explained above.
+- LR rotation = RR rotation + LL rotation
+- i.e, First RR rotation is performed on subtree and then LL rotation is performed on full tree, by full tree we mean the first node from the node from the path of inserted node whose balance factor is other than -1, 0 & 1.
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+# RL Rotation:
+- Double rotations are bit tougher than single rotation which has already explained above.
+- RL rotation = LL rotation + RR rotation
+- i.e, First LL rotation is performed on subtree and then RR rotation is performed on full tree, by full tree we mean the first node from the path of inserted node whose balance factor is other than -1, 0 & 1.
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+- Construct an AVL tree by inserting the following elements in the given order.
+- Elements: 63	9	19	27	18	108	99	81
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+
+<!-- Author - Avinash Kumar || Contact: avinashbest3@gmail.com -->
