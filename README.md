@@ -943,4 +943,69 @@ Inserted node is in the left subtree of right subtree of A
 <!-- Slide -->
 <!-- Slide -->
 
+- Construct an AVL tree by inserting the following elements in the given order.
+
+		Elements: 14, 17, 11, 7, 53, 4, 13
+
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->	
+
+# Graph:
+- A graph data structure is a collection of nodes that have dat and are connected to other nodes.
+- A collections of vertices V.
+- A collection of edges E, represented as ordered pairs of vertices(u, v)
+- V = {0,1,2,3}
+- V = {(0,1),(0,2),(0,3),(1,2)}
+- G = {V, E}
+
+## Graph Terminology:
+#### Vertex:
+- Each node of the graph is represented as a vertex. In the following example, the labeled circle represents vertices. Thus A to G are vertices. We can represent them using an array as shown in the following image. Here A can be identified by index 0. B can be identified using index 1 and so on.
+<!-- Image -->
+
+#### Adjacency:
+- A vertex is said to be adjacent to another vertex if there is an edge connecting them. Vertices 2 and 3 are not adjacent because there is no edge between them.
+
+#### Path:
+- A sequence of edges that allows you to go from vertex A to vertex B is called a path. 0-1, 1-2 and 0-2 are path from vertex 0 to vertex 2.
+<!-- Image -->
+
+#### Directed Graph:
+- A graph in which an edge (u,v) doesn't necessarily mean that there is an edge(v, u) as well. The edges in such a graph are represented by arrows to show the direction of the edge.
+
+#### Undirected Graph:
+- A graph in which an edge (u, v) mean that there is an edge (v, u) also. The edges in such a graph are represented by line to show the edge.
+
+# Graph Representation:
+- Graph are commonly represented in two ways:
+1. <strong>Adjacency Matrix</strong>
+- An adjacency matrix is a 2D array of V x V vertices. Each row and column represent a vertex.
+- If the value of any element a[i][j] is 1, it represents that there is an edge connecting vertex i and vertex j.
+<!-- Image  -->
+
+2. <strong>Adjacency List</strong>
+- An adjacency list represents a graph as an array of linked lists.
+- The index of the array represents a vertex and each element in its linked list represents the other vertices that form an edge with the vertex.
+- The adjacency list for the graph we made in the first example is as follows:
+<!-- Image -->
+
+# Graph Operations:
+- Check if the element is present in the graph Traversal.
+- Add elements (vertex, edges) to graph
+- Finding the path from one vertex to another.
+
+### Depth First Traversal:
+- Depth First Search (DFS) algorithm traverses a graph in a depthward motion and uses a stack to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+
+1. Visit the adjacent unvisited vertex. Mark it as visited Display it. Push it in a stack.
+2. If no adjacent vertex is found, pop up a vertex from the stack.
+3. Repeat Rule 1 and Rule 2 until the stack is empty.
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+
+
 <!-- Author - Avinash Kumar || Contact: avinashbest3@gmail.com -->
