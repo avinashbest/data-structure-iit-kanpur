@@ -610,6 +610,21 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 ![image](https://drive.google.com/uc?export=view&id=1UV1q1qmpCBjLpB0otwo_zSIqJJVyOAVc)
 
+## Insertion Sort:
+- Pseudocode
+
+		```
+		i <- 1
+		while i < length(A)
+			j <- i
+			while j > 0 and A[j-1] > A[j]
+				swap A[j] and A[j - 1]
+				j <- j + 1
+			end while
+			i <- i + 1
+		end while
+		```
+
 # Tree:
 
 - A tree is a non-linear hierarchical data structure taht consists of nodes connected by edges.
@@ -1006,6 +1021,15 @@ Inserted node is in the left subtree of right subtree of A
 <!-- Slide -->
 <!-- Slide -->
 <!-- Slide -->
-
+### Breadth First Traversal
+- Breadth First Traversal (BFS) algorithm traverses a graph in a breadthward motion and uses a queue to remember to get the next vertex to start a search, when a dead end occurs in any iteration.
+1. Visit the adjacent unvisited vertex. Mark it as visited Display it. Push it in a queue.
+2. If no adjacent vertex is found, pop up a vertex from the queue.
+3. Repeat Rule 1 and Rule 2 until the queue is empty.
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
+<!-- Slide -->
 
 <!-- Author - Avinash Kumar || Contact: avinashbest3@gmail.com -->
