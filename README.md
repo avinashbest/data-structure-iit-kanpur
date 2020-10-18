@@ -621,9 +621,28 @@ Refers to the operation of arranging data in some given order, such as increasin
       end while
       ```
 
+## Selection Sort:
+
+- Pseudocode
+
+      ```
+      n <- length(A)
+      i <- 0
+      while i < n-1
+        min <- i
+        j <- i + 1
+        while j < n
+            if (A[j] < A[min])
+                min <- j
+            j <- j + 1
+        if (min != i)
+            swap(A[i], A[min])
+        i <- i + 1
+      ```
+
 # Tree:
 
-- A tree is a non-linear hierarchical data structure taht consists of nodes connected by edges.
+- A tree is a non-linear hierarchical data structure that consists of nodes connected by edges.
 
 ## Tree Terminologies:
 
@@ -1094,4 +1113,32 @@ Refers to the operation of arranging data in some given order, such as increasin
       <!-- Slide -->
       <!-- Slide -->
 
+# Spanning Tree:
+- A spanning tree is a sub-graph of an undirected connected graph, which includes all the vertices of the graph with a minimum possible number of edges. If a vertex is missed, then it is not a spanning tree.
+- The edges may or may not have weights assigned to them.
+- The total number of spanning trees with n vertices that can be created from a complete graph is equal to n^(n-2).
+- If we have n = 4, the maximum number of possible spanning trees is equal to 4^(4-2) = 16. Thus, 16 spanning trees can be formed from a complete graph with 4 vertices.
+<!-- Image -->
+- Some of the possible spanning trees that can be created from the above graph are:
+<!-- Image -->
+- Some of the possible spanning trees that can be created from the above graph are:
+
+# Minimum Spanning Tree:
+- A minimum spanning tree is a spanning tree in which the sum of the weight of the edges is as minimum as possible.
+- The initial graph is:
+<!-- Image -->
+- The possible spanning trees from the above graph are:
+<!-- Image -->
+- The minimum spanning tree from the above spanning trees is:
+<!-- Image -->
+- Spanning Tree Applications
+
+    - Computer Network Routing Protocol
+    -  Cluster Analysis
+    - Civil Network Planning
+
+- Minimum Spanning Tree Applications
+
+    - To find paths in the map
+    - To design networks like telecommunication networks, water supply networks, and electrical grids.
 <!-- Author - Avinash Kumar || Contact: avinashbest3@gmail.com -->
