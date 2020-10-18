@@ -10,7 +10,7 @@
 
 - Set of statement or block of code that perform some tasks.
 
-- Functions can be use multiple times depend on function call.
+- Functions can be use multiple times depending upon function call.
 
 - The idea is to use some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again we can call that function.
 
@@ -19,7 +19,7 @@
   1.  System Defined/Predefined/library Function/built-in Function (printf, scanf, etc).
   2.  User Defined Function => Used to customize user's task.
 
-### How create user defined function?
+### How to create user defined function?
 
 #### Function Declaration
 
@@ -66,7 +66,7 @@ Function Calling:
 
 - An Array is a collection of similar data items and these data items may be all int, float or all char.
 - Each member of an array is identified by unique index or subscript assigned to it.
-- An Array is defined in the same way as a variable is defined except that, the array name is followed by one or more expressions, enclosed withing square brackets[], specifying the array dimension.
+- An Array is defined in the same way as a variable is defined except that, the array name is followed by one or more expressions, enclosed within square brackets[], specifying the array dimension.
 - The general Syntax of an array is:
 
 SYNTAX: data_type ArrayName[SIZE];
@@ -173,9 +173,9 @@ An algorithm is a finite sequence of instructions, each of which has a clear mea
 
 3. Definiteness: each instruction must be clear and unambiguous;
 
-4. Finiteness: if we trace out the instructions of an algorithm, then for all cases the algorithm will terminate after a finite number of steps;
+4. Finiteness: if we trace out the instructions of an algorithm, then for all cases the algorithm will terminate after a finite number of steps.
 
-5. Effectiveness: every instruction must be sufficiently basic that it can in principle be carried out by a person using only pencil and paper. It is not enough that each operation be definite, but it must also be feasible.
+5. Effectiveness: every instruction must be sufficiently basic that it  principle can be carried out by a person using only pencil and paper. It is not enough that each operation be definite, but it must also be feasible.
 
 # Introduction:
 
