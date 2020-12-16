@@ -335,11 +335,6 @@ Let us create a simple Linked List with three items to understand how this works
     	two->data = 2;
     	three->data=3;
 
-    	//Assign data values
-    	one->data = 1;
-    	two->data = 2;
-    	three->data=3;
-
     	//Connect nodes
     	one->next = two;
     	two->next = three;

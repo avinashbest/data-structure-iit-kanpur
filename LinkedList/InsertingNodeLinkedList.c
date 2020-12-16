@@ -11,6 +11,7 @@ void insert();
 void show();
 void begining();
 void intermediate();
+void insertEnd();
 //Structure of the Node
 struct student
 {
@@ -30,6 +31,7 @@ int main(void)
 		printf("\nPress 2 to display elements.");
 		printf("\nPress 3 to add at begining.");
 		printf("\nPress 4 to add at specific position.");
+		printf("\nPress 5 to add at End.");
 		printf("\nEnter Your Choice: ");
 		scanf("%d", &choice);
 		if (choice == 1)
@@ -47,6 +49,10 @@ int main(void)
 		else if (choice == 4)
 		{
 			intermediate();
+		}
+		else if (choice == 5)
+		{
+			insertEnd();
 		}
 	} while (choice != 0);
 
@@ -116,4 +122,19 @@ void intermediate()
 		node->next = temp->next;
 		temp->next = node;
 	}
+}
+
+void insertEnd()
+{
+	node = (struct student *)malloc(sizeof(struct student));
+	printf("\nEnter the Roll No: ");
+	scanf("%d", &node->rollNo);
+	node->next = NULL; //Optional
+	temp = start;
+	while (temp->next != NULL)
+	{
+		temp = temp->next;
+	}
+	temp->next = node;
+	printf("\nElement is Added Successfully!\n");
 }

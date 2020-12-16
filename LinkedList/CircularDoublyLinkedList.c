@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-//Doubly Linked List
+//Circular Doubly Linked List
 void create();
 void show();
 

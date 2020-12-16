@@ -104,13 +104,14 @@ void delete_last()
 	if (start != NULL)
 	{
 		temp = start;
-		for (; temp->next != NULL; temp = temp->next)
+		while (temp->next != NULL)
 		{
 			s = temp;
-			s->next = NULL;
-			free(temp);
-			printf("\nElement Removed Successfully!");
+			temp = temp->next;
 		}
+		s->next = NULL;// After while loop terminates s is pointing to 2nd last node of the linked list
+		free(temp);
+		printf("\nElement Removed Successfully!");
 	}
 	else
 	{
