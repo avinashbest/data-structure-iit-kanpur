@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int n,a,b;cin>>n;
+	while(n--){
+	    cin>>a>>b;
+	    int sum=1;
+	    while(sum<=a){
+	        sum = sum*b;
+	    }
+	    cout<<sum/b<<endl;
+	}
+	return 0;
+}
+© 2020 GitHub, Inc.
