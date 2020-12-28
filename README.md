@@ -927,7 +927,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 - If every non-leaf node or non-terminal node in a binary tree has non empty left sub tree and right sub trees.
 - In other words, the degree of every non-leaf node will always be 2.
 - A strictly binary tree with n leaves always contains (2^n - 1) nodes.
-<!-- Image -->
+![image](https://drive.google.com/uc?export=view&id=1aONZw29BpvtRp3d6xI1x75sjFxCO6--r)
 
 ## Full Binary Tree:
 
