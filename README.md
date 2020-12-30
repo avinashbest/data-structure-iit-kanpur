@@ -484,12 +484,12 @@ arithmetic operator in between the two operands.
     	Example: A+B
     	(A + B) * (C - D)
 
-- Prefix: It is the form of an arithmetic notation in which we fix (place) the arithmetic operator before (pre) its two operands. The prefix notation is called as polish notation.
+# Prefix: It is the form of an arithmetic notation in which we fix (place) the arithmetic operator before (pre) its two operands. The prefix notation is called as polish notation.
 
       Example: +AB
       *+AB - CD
 
-- Postfix: It is the form of an arithmetic expression in which we fix (place) the arithmetic operator after (post) its two operands. The postfix notation is called as suffix notation and is also referred to reverse polish notation.
+# Postfix: It is the form of an arithmetic expression in which we fix (place) the arithmetic operator after (post) its two operands. The postfix notation is called as suffix notation and is also referred to reverse polish notation.
 
       Example: AB+
       AB + CD -*
@@ -527,8 +527,7 @@ For these binary operations, the following in the order of precedence (highest t
         		for e.g. A^B*C-D/E
         				=> (A^B) *C-D/E
         				=> ((A^B) *C)-D/E
-
-        		for e.g. ((A^B) *C)-(D/E)
+                => ((A^B) *C)-(D/E)
         				=> (((A^B) *C)-(D/E))
         				=> -*^ABC/DE
 
@@ -646,8 +645,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 - A node is an entity that contains a key or value and pointers
   to its child nodes.
 - The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.
-- The node having at least a child node is called an internal
-  node.
+- The node having at least a child node is called an internal node.
 
 #### Edge:
 
@@ -657,8 +655,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 #### Leaf node:
 
-- A node with no children is called a leaf (or external node).
-  A node which is not a leaf is called an internal node.
+- A node with no children is called a leaf (or external node). A node which is not a leaf is called an internal node.
 
 #### Path:
 
@@ -684,7 +681,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 #### Height of a Node:
 
-- The height of a node is the number of edges from the node to the deepest leaf (i.e,he longest path fromt he node to a leaf node).
+- The height of a node is the number of edges from the node to the deepest leaf (i.e,the longest path from the node to a leaf node).
 
 #### Depth of a Node:
 
@@ -696,7 +693,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 #### Level:
 
-- The level of the node refers to its distance from the root. The root of the tree has level O, and the level of any other node in the tree is one more thatn the level of its parent. For e.g., In the binary tree of figure above node F is at level 2 and node H is at level 3.
+- The level of the node refers to its distance from the root. The root of the tree has level O, and the level of any other node in the tree is one more than the level of its parent. For e.g., In the binary tree of figure above node F is at level 2 and node H is at level 3.
 - The maximum number of nodes at any level is 2^n.
 
 ![image](https://drive.google.com/uc?export=view&id=1GwqJ5RIvG1kya2cPGIlcwzQXtDrR8n5h)
@@ -750,7 +747,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 <strong>Assigning level numbers and Numbering of nodes for a binary tree: </strong>
 
 - The nodes of a binary tree can be numbered in a natural way, level by level, left to right.
-- The nodes of a complete binary tree can be numbered so that the root is assigned the number 1, a left child is assigned twice the number assigned its parent, and a right child is assigned one more thatn twice the number assigned its parent. For e.g.
+- The nodes of a complete binary tree can be numbered so that the root is assigned the number 1, a left child is assigned twice the number assigned its parent, and a right child is assigned one more than twice the number assigned its parent. For e.g.
 
 ![image](https://drive.google.com/uc?export=view&id=1tge4BRxXDz5mVjK0r4A57vts0GTIbxNI)
 
@@ -761,13 +758,13 @@ Refers to the operation of arranging data in some given order, such as increasin
 ### Binary Tree Traversal Techniques:
 
 - A tree traversal is a method of visting every node in the tree. By visit, we mean that some type of operation is performe. For e.g. You may wish to print the content of the nodes.
-- There are following ways to traverse a bianry tree:
+- There are following ways to traverse a binary tree:
 
       1. Preorder
       2. Inorder
       3. Postorder
 
-- In the first three traversal methods, the left subtre of a node is traversed before the right subtree. The difference among them comes from the difference in the time at which a root node is visted.
+- In the first three traversal methods, the left subtree of a node is traversed before the right subtree. The difference among them comes from the difference in the time at which a root node is visted.
 
 ### Inorder Traversal:
 
@@ -790,7 +787,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 ### Postorder Traversal:
 
 - In a postorder traversal, each root is visited after its left and right subtrees have been traversed.
-- The steps for traversing a binary treeis postorder traversal are:
+- The steps for traversing a binary tree is postorder traversal are:
 
       1. Visit the left subtree, using inorder.
       2. Visit the right subtree, using inorder.
@@ -815,8 +812,8 @@ Refers to the operation of arranging data in some given order, such as increasin
 # Binary Search Tree:
 
 - Binary Search tree can be defined as a class of binary trees, in which the nodes are arranged in a specific order. This is also called ordered binary tree.
-- In a binary search tree, the value of all the nodes in the left sub-tree is less than the calue of the root.
-- Similarly, value of all the nodes in the righub-tree is greater than or equal to the value of the root.
+- In a binary search tree, the value of all the nodes in the left sub-tree is less than the value of the root.
+- Similarly, value of all the nodes in the right sub-tree is greater than or equal to the value of the root.
 - This rule will be recursively applied to all the left and right sub-trees of the root.
 
 ![image](https://drive.google.com/uc?export=view&id=1T5rbgY5jiPfKPdcnq8N6HpWp3HfCsBeU)
@@ -931,8 +928,8 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 ## Full Binary Tree:
 
-- A full binary tree of height h has all its leaves at level h. Alternatively; All non leaf nodes of a full binary tree have twp children, and the leaf nodes have no children.
-- A full binary tree with height h has 2^(h+1) - 1 nodes. A full binary tree of height is structly binary tree all of whose leaves are at level h.
+- A full binary tree of height h has all its leaves at level h. Alternatively; All non leaf nodes of a full binary tree have two children, and the leaf nodes have no children.
+- A full binary tree with height h has 2^(h+1) - 1 nodes. A full binary tree of height is strictly binary tree all of whose leaves are at level h.
 - A full binary tree of height h contains 2^h leaves and 2^h - 1 non-leaf nodes.
 - For example, a full binary tree of height 3 contains 2^(3+1) - 1 = 15 nodes.
 <!-- Image -->
@@ -944,12 +941,12 @@ Refers to the operation of arranging data in some given order, such as increasin
 - The total number of nodes in a complete binary tree with depth d is 2d+l-l where leaf nodes are 2d while non-leaf nodes are 2d-l
 <!-- Image -->
 - A binary tree with n nodes is said to be complete if it contains all the first n nodes of the above numbering scheme.
-- A complete binary tree of height h looks like a full binary tree down to lvel (h-l), and the level h is filled from left to right.
+- A complete binary tree of height h looks like a full binary tree down to level (h-l), and the level h is filled from left to right.
 - A binary tree with n nodes and of depth d is strictly binary tree all of whose terminal node are at level d, in a complex binary tree, there is exactly one node at level 0, two nodes at level l, and four nodes at level 2 and so on.
 
 # Internal & External Nodes:
 
-- An internal node is a tree having atleast one-key and possibly some children. It is some times convenient to ahve another types of nodes, called an external node, and pretend that all null child links point to such a node. An external node doesn't exist, but serves as a conceptual place holder for nodes to be inserted.
+- An internal node is a tree having atleast one-key and possibly some children. It is some times convenient to have another types of nodes, called an external node, and pretend that all null child links point to such a node. An external node doesn't exist, but serves as a conceptual place holder for nodes to be inserted.
 - We draw internal nodes using circles, with letters as labels. External nodes are denoted by squares. The square node version is sometimes called an extended binary tree. A binary tree with n internal nodes has (n+1) external nodes.
 <!-- Image -->
 
@@ -963,7 +960,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 ## AVL Rotation:
 
-- We perform rotation in AV:L tree only in caser if Balance Factor is other than -1, 0 & 1.
+- We perform rotation in AVL tree only in case if Balance Factor is other than -1, 0 & 1.
 - There are basically four types of rotations which are as follows:
 
 1. <strong> LL Rotation: </strong>
