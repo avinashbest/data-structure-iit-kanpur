@@ -989,9 +989,10 @@ Refers to the operation of arranging data in some given order, such as increasin
       LR rotation = RR rotation + LL rotation
 
 - i.e, First RR rotation is performed on subtree and then LL rotation is performed on full tree, by full tree we mean the first node from the node from the path of inserted node whose balance factor is other than -1, 0 & 1.
-  <!-- Slide -->
-  <!-- Slide -->
-  <!-- Slide -->
+
+![image](https://drive.google.com/uc?export=view&id=1LYnPI0VTWYpZ9ctkhdazgzwN8D1EsugG)
+![image](https://drive.google.com/uc?export=view&id=1g9A0PQye1-xadS-4OPP4RDX-d5HxAIqL)
+![image](https://drive.google.com/uc?export=view&id=1_j2tYuoZOe_QV7uPTeH_bJs0YzjyGDEY)
 
 ### RL Rotation:
 
