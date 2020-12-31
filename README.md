@@ -642,8 +642,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 #### Node:
 
-- A node is an entity that contains a key or value and pointers
-  to its child nodes.
+- A node is an entity that contains a key or value and pointer to its child nodes.
 - The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.
 - The node having at least a child node is called an internal node.
 
@@ -672,8 +671,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 #### Ancestor and Descendent:
 
-- If there is a path from node A to node B, then A is called an ancestor of B and
-- B is called a descendent of A.
+- If there is a path from node A to node B, then A is called an ancestor of B and B is called a descendent of A.
 
 #### Root:
 
