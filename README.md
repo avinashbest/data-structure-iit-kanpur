@@ -484,12 +484,16 @@ arithmetic operator in between the two operands.
     	Example: A+B
     	(A + B) * (C - D)
 
-# Prefix: It is the form of an arithmetic notation in which we fix (place) the arithmetic operator before (pre) its two operands. The prefix notation is called as polish notation.
+# Prefix: 
+
+It is the form of an arithmetic notation in which we fix (place) the arithmetic operator before (pre) its two operands. The prefix notation is called as polish notation.
 
       Example: +AB
       *+AB - CD
 
-# Postfix: It is the form of an arithmetic expression in which we fix (place) the arithmetic operator after (post) its two operands. The postfix notation is called as suffix notation and is also referred to reverse polish notation.
+# Postfix: 
+
+It is the form of an arithmetic expression in which we fix (place) the arithmetic operator after (post) its two operands. The postfix notation is called as suffix notation and is also referred to reverse polish notation.
 
       Example: AB+
       AB + CD -*
