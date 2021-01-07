@@ -1021,7 +1021,7 @@ Refers to the operation of arranging data in some given order, such as increasin
 
 # Graph:
 
-- A graph data structure is a collection of nodes that have dat and are connected to other nodes.
+- A graph data structure is a collection of nodes that have data and are connected to other nodes.
 - A collections of vertices V.
 - A collection of edges E, represented as ordered pairs of vertices(u, v)
 - V = {0,1,2,3}
